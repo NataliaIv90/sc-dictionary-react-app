@@ -1,4 +1,6 @@
 import React from "react";
+import Synonyms from "./Synonyms";
+import Example from "./Example";
 
 export default function Meaning(props) {
   console.log(props.data);
@@ -6,8 +8,14 @@ export default function Meaning(props) {
     <div className="Meaning">
       <h3>{props.data.partOfSpeech}</h3>
       {/* If you want to display only firts definition */}
-      <p>{props.data.definitions[0].definition}</p>
-      <p>{props.data.definitions[0].example}</p>
+      <p>
+        <strong>Definition: </strong>
+        {props.data.definitions[0].definition}
+      </p>
+
+      <Example data={props.data.definitions[0].example} />
+      <Synonyms data={props.data.definitions[0].synonyms} />
+
       <hr />
       {/* If you want to display EVERY definition */}
       {/* {props.data.definitions.map(function (definition, index) {
