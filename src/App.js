@@ -13,7 +13,7 @@ function App() {
       </main>
 
       <footer>
-        <p>Open-source code by Nayalia Ivantsova</p>
+        <p>Open-source code by Natalia Ivantsova</p>
       </footer>
     </div>
   );

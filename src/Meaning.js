@@ -3,7 +3,6 @@ import Synonyms from "./Synonyms";
 import Example from "./Example";
 
 export default function Meaning(props) {
-  console.log(props.data);
   return (
     <div className="Meaning">
       <h3>{props.data.partOfSpeech}</h3>
