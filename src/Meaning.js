@@ -5,7 +5,12 @@ export default function Meaning(props) {
   return (
     <div className="Meaning">
       <h3>{props.data.partOfSpeech}</h3>
-      {props.data.definitions.map(function (definition, index) {
+      {/* If you want to display only firts definition */}
+      <p>{props.data.definitions[0].definition}</p>
+      <p>{props.data.definitions[0].example}</p>
+      <hr />
+      {/* If you want to display EVERY definition */}
+      {/* {props.data.definitions.map(function (definition, index) {
         return (
           <div className="Meaning__definition" key={index}>
             <p>{definition.definition}</p>
@@ -15,7 +20,7 @@ export default function Meaning(props) {
             <hr />
           </div>
         );
-      })}
+      })} */}
     </div>
   );
 }
