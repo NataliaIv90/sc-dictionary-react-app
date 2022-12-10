@@ -1,0 +1,13 @@
+.Result h2 {
+  color: #143338;
+  opacity: 0.9;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.Result .transcription {
+  font-size: 1.3rem;
+
+  opacity: 0.7;
+  margin-bottom: 0px;
+}

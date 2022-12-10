@@ -1,8 +1,15 @@
-.App header {
-  text-align: center;
+.App {
+  background-color: #e5ded433;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 100vh;
 }
 
 .App footer {
   text-align: center;
   margin-top: 30px;
+}
+
+.App ul {
+  padding: 0px;
 }

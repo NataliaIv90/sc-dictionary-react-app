@@ -11,7 +11,7 @@ export default function Phonetics(props) {
   if (props.data) {
     return (
       <div className="Phonetics">
-        <a href="./" onClick={listenPhonetics}>
+        <a href="./" onClick={listenPhonetics} className="pe-3">
           <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512">
             <g>
               <g>

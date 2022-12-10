@@ -4,12 +4,8 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Dictionary React App</h1>
-      </header>
-
       <main>
-        <Dictionary />
+        <Dictionary defaultKeyword="color" />
       </main>
 
       <footer>
