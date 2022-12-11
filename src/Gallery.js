@@ -8,7 +8,7 @@ export default function Gallery(props) {
           {props.data.map(function (photo, index) {
             return (
               <div className="col-4" key={index}>
-                <a href={photo.src.original} target="_blank" rel="norefferer">
+                <a href={photo.src.original} target="_blank" rel="noreferrer">
                   <img
                     src={photo.src.landscape}
                     className="img-fluid  rounded"
