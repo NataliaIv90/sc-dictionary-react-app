@@ -4,6 +4,11 @@
   font-size: 1.5rem;
 }
 
+.Meaning__content {
+  margin-top: 4%;
+  padding-left: 4%;
+}
+
 .Meaning .example {
   opacity: 0.8;
   font-size: 0.9em;

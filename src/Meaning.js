@@ -8,10 +8,12 @@ export default function Meaning(props) {
       <section>
         <h3>{props.data.partOfSpeech}</h3>
         {/* If you want to display only firts definition */}
-        <p className="definition">{props.data.definitions[0].definition}</p>
-        <p className="example">{props.data.definitions[0].example}</p>
+        <div className="Meaning__content">
+          <p className="definition">{props.data.definitions[0].definition}</p>
+          <p className="example">{props.data.definitions[0].example}</p>
 
-        <Synonyms data={props.data.definitions[0].synonyms} />
+          <Synonyms data={props.data.definitions[0].synonyms} />
+        </div>
       </section>
       {/* If you want to display EVERY definition */}
       {/* {props.data.definitions.map(function (definition, index) {
